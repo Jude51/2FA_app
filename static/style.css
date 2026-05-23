@@ -1,0 +1,80 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+a{
+        color:#ffffff;
+        text-decoration:none;
+        background-color:#8b0000;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-bottom: 10px ;
+        transition: 0.3s;
+    
+    }  
+a:hover {
+    background-color: #1a1a2e;
+}
+input{width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #16213e;
+    color: #ffffff;
+    border: 1px solid #8b0000;
+    border-radius: 8px;
+}
+button{width: 300px;
+padding: 5px;
+margin-bottom: 10px;
+background-color: #8b0000;
+color: #ffffff;
+transition: 0.3s;
+}
+button:hover{background-color:#1a1a2e;}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    background-color: #16213e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+img {
+    margin-bottom: 20px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    animation: fadeIn 0.5s ease;
+}
+.home-btn{
+    align-self: flex-start;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #8b0000;
+    width: 20px;
+height: 20px;
+}

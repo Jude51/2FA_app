@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Войти</title>
+</head>
+<body>
+    <div class="container">
+        <h2>2FA App</h2>
+        <div class="card">
+            <a href="/" class="home-btn">🏠 </a>
+        {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+        {% endfor %}
+        <h1>Войти</h1>
+        <form action='/login' method=POST>
+            <input type="text" placeholder="Введите Логин" name="username">
+            <input type="password" placeholder="Введите пароль" name="password" autocomplete="off">
+            <button>Войти</button>
+        </form>
+        <p>Нет аккаунта? <a href="/register">Зарегистрироваться</a></p>
+        </div>
+    </div>
+</body>
+</html>

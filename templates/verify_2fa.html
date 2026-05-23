@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Двухфакторная аутентификация</title>
+</head>
+<body>
+    <div class="container">
+        <h2>2FA App</h2>
+        <h1>Введите код</h1>
+        {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+        {% endfor %}
+        <form action='/verify-2fa' method="POST">
+            <input type="text" placeholder="Введите 6-значный код" name="code">
+            <button>Подтвердить</button>
+            <a href="/reset-2fa">Сбросить 2FA</a>
+        </form>
+    </div>
+</body>
+</html>
