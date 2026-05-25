@@ -98,15 +98,7 @@ def login():
 def logout():
     session.clear()
     return redirect('/')
-@app.route('/reset-2fa',methods=['GET'])
-def reset():
-    username=session['username']
-    user=User.query.filter_by(username=username).first()
-    totp_secret=pyotp.random_base32()
-    user.totp_secret = totp_secret
-    db.session.commit()
-    session['totp_secret']=totp_secret
-    return redirect('/setup-2fa')
+
 
 
 with app.app_context():
