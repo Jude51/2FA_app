@@ -78,3 +78,12 @@ img {
     width: 20px;
 height: 20px;
 }
+select {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #16213e;
+    color: #ffffff;
+    border: 1px solid #8b0000;
+    border-radius: 8px;
+}
