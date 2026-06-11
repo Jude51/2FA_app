@@ -12,24 +12,11 @@
     <h1>Добро пожаловать, {{ username }} </h1>
     <a href="/logout">Выйти</a>
 {% else %}
-    <h1>Пожалуйста войдите</h1>
+    <h1>Пожалуйста, войдите</h1>
     <a href="/login">Войти</a>
     <a href="/register">Зарегистрироваться</a>
 {% endif %}
-{% if session.pop('just_logged_in', False) %}
-<script>
-var duration = 5 * 1000;
-var end = Date.now() + duration;
 
-(function frame() {
-    confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0 } });
-    confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1 } });
-    if (Date.now() < end) requestAnimationFrame(frame);
-})();
-</script>
-
-
-{% endif %}
 
 
 </div>
