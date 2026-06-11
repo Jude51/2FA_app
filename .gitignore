@@ -15,3 +15,5 @@ static/qrcode.png
 .env
 app.py
 test_app.py
+cd
+python
