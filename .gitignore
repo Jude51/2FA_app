@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Database files
+instance/
+
+# Static generated content
+static/qrcode.png
+
+# Test coverage
+.coverage
+
+# Environment files
+.env
