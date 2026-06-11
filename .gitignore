@@ -13,3 +13,4 @@ static/qrcode.png
 
 # Environment files
 .env
+app.py
